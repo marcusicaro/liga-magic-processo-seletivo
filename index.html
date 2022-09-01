@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filtrar e procurar cartas</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Digite o nome do produto..."
+        />
+        <button id="search">Procurar</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">Todos</button>
+        <button class="button-value" onclick="filterProduct('Vermelho')">
+          Vermelho
+        </button>
+        <button class="button-value" onclick="filterProduct('Azul')">
+          Azul
+        </button>
+        <button class="button-value" onclick="filterProduct('Verde')">
+          Verde
+        </button>
+        <button class="button-value" onclick="filterProduct('Preto')">
+          Preto
+        </button>
+        <button class="button-value" onclick="filterProduct('Branco')">
+          Branco
+        </button>
+      </div>
+      <div id="products"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
