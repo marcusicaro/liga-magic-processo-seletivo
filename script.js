@@ -43,6 +43,14 @@ for (let i of products.data) {
 
   card.classList.add("card", i.category, "hide");
 
+  card.addEventListener('mouseenter', function(e){
+    card.classList.add('scale')
+  });
+
+  card.addEventListener('mouseleave', function(e){
+    card.classList.remove('scale');
+  })
+
   let imgContainer = document.createElement("div");
   imgContainer.classList.add("image-container");
 

@@ -58,6 +58,7 @@ body {
   padding: 1em;
   border-radius: 5px;
   box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+  transition: all 0.07s;
 }
 .image-container {
   text-align: center;
@@ -91,4 +92,8 @@ img {
     grid-template-columns: auto auto;
     grid-column-gap: 1em;
   }
+}
+
+.scale{
+  transform:scale(1.05);
 }
